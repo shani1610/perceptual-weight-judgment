@@ -8,9 +8,22 @@
 This is a dataset for human perceptual weight judgment. 
 
 ## Contents
-1. [Dataset Structure](#dataset-structure)
-2. [License](#license)
-3. [Citation](#citation)
+1. [Description](#description)
+2. [Download](#download)
+3. [Dataset Structure](#dataset-structure)
+4. [License](#license)
+5. [Citation](#citation)
+
+##Description
+The Perceptual Weight Judgment dataset is a dataset of human lifting box with changing weights.
+Each subject was asked to lifting a box from the ground to a table.
+Without letting the subject know, the weight of the carrying box was randomly changed by putting different weight plates into the concealed box, 
+ranging from 0 kg to 20 kg with a step of 5 kg.
+
+The dataset includes:
+
+5 subjects interacting with a cocealed box in 5 different weights at neutral environment.
+In total 25 video sequences recorded with Iphone.
 
 ## Download
 For download, please click [here](https://www.dropbox.com/scl/fi/0jrgn887lnpv4cwj3qf4k/data.zip?rlkey=otauddx7u6bhz9cc55qxwmpem&dl=0)
@@ -19,13 +32,13 @@ For download, please click [here](https://www.dropbox.com/scl/fi/0jrgn887lnpv4cw
 After unzip the dataset, you can find folder `data` containing file with the name `video_wW_aA_cC.MOV` where W is the weight, A is the actor numeration and C indicate 0/1 for uncropped/cropped image accordingly, for example: `video_w0_a1_c0.MOV` indicates weight 0kg, actor number 1, uncropped image. 
 
 ## Example usage
-Here we describe some example usages of our dataset: 
+Here we describe example usage of our dataset: 
 
-### Crop 30% from the bottom 
+### Crop 30% of the frame from the bottom 
 
-We provide sample code in `compute_contacts.py` to generate contact labels from SMPL and object registrations. Run with:
+We provide sample code in `crop_bottom.py` to crop 30% of the frame from the bottom. Run with:
 ```
-python compute_contacts.py -s BEHAVE_PATH/sequences/TARGET_SEQ 
+python crop_bottom.py -s DATA_PATH
 ``` 
 
 ## License
