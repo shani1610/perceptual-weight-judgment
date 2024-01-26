@@ -12,32 +12,21 @@ This is a dataset for human perceptual weight judgment.
 2. [License](#license)
 3. [Citation](#citation)
 
-## Dataset Structure
-After unzip the dataset, you can find two subfolders: `original`, `cropped`. The summary of each folder is described below:
-```
-original: 
-cropped: 
-```
+## Download
+For download, please click [here](https://www.dropbox.com/scl/fi/0jrgn887lnpv4cwj3qf4k/data.zip?rlkey=otauddx7u6bhz9cc55qxwmpem&dl=0)
 
-**dataset**: This folder provides the scans of our template objects. 
-```
-DATASET_PATH
-|--origials
-|----actor1.jpg
-|--cropped
-|----actor1.jpg
-```
+## Dataset Structure
+After unzip the dataset, you can find folder `data` containing file with the name `video_wW_aA_cC.MOV` where W is the weight, A is the actor numeration and C indicate 0/1 for uncropped/cropped image accordingly, for example: `video_w0_a1_c0.MOV` indicates weight 0kg, actor number 1, uncropped image. 
 
 ## Example usage
 Here we describe some example usages of our dataset: 
 
-### Generate contact labels
+### Crop 30% from the bottom 
 
 We provide sample code in `compute_contacts.py` to generate contact labels from SMPL and object registrations. Run with:
 ```
 python compute_contacts.py -s BEHAVE_PATH/sequences/TARGET_SEQ 
-```
-It samples 10k points on the object surface and compute binary contact label, and the correspondence SMPL vertices for each point. The result is saved as an `npz` file in the same folder of object registration results. 
+``` 
 
 ## License
 Copyright (c) 2024, Toyohashi-University-Of-Technology
