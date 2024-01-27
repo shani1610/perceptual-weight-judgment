@@ -4,7 +4,7 @@ Collaborators: [Georgopoulou, Artemis](https://github.com/artemisge) | [Israelov
 
 [[Project Report]](https://docs.google.com/document/d/e/2PACX-1vSASPeU8cQC7EI6yIh76JWRZKQWgrYbdHmD1CYblf8ZGva5pHf9cNvCmzJoQ0WjJg73TBcDSSHU6jVA/pub)
 <p align="center">
-<img src="images/snippet1.png" alt="teaser" width="1920"/>
+<img src="images/snippet1_gif.gif" alt="teaser" width="1920"/>
 </p>
 This is a dataset for human perceptual weight judgment. 
 
@@ -40,7 +40,12 @@ Here we describe example usage of our dataset:
 We provide sample code in `crop_bottom.py` to crop 30% of the frame from the bottom. Run with:
 ```
 python crop_bottom.py -s DATA_PATH
-``` 
+```
+example:
+
+<p align="center">
+<img src="images/snippet1.png" alt="teaser" width="1920"/>
+</p>
 
 ## License
 Copyright (c) 2024, Toyohashi-University-Of-Technology
