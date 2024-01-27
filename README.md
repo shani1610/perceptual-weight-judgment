@@ -1,5 +1,6 @@
 # Human Perceptual Weight Judgment Dataset
 
+Collaborators: [Georgopoulou, Artemis](https://github.com/artemisge) | [Israelov, Shani](https://github.com/shani1610) | [Izumi, Takerhiro](https://github.com/sytk) | [Manschein, Fabiano](https://github.com/Fabulani) | [Takagi, Yuya](https://github.com/shiohiyoko)
 
 [[Project Report]](https://docs.google.com/document/d/e/2PACX-1vSASPeU8cQC7EI6yIh76JWRZKQWgrYbdHmD1CYblf8ZGva5pHf9cNvCmzJoQ0WjJg73TBcDSSHU6jVA/pub)
 <p align="center">
@@ -15,14 +16,14 @@ This is a dataset for human perceptual weight judgment.
 5. [Citation](#citation)
 
 ## Description
-The Perceptual Weight Judgment dataset is a dataset of human lifting box with changing weights.
-Each subject was asked to lifting a box from the ground to a table.
-Without letting the subject know, the weight of the carrying box was randomly changed by putting different weight plates into the concealed box, 
+The Perceptual Weight Judgment dataset is a dataset of humans lift box with changing weights.
+Each subject was asked to lift a box from the ground to a table.
+Without letting the subject know, the weight of the carrying box was randomly changed by putting different weight plates into a concealed box, 
 ranging from 0 kg to 20 kg with a step of 5 kg.
 
 The dataset includes:
 
-5 subjects interacting with a cocealed box in 5 different weights at neutral environment.
+5 subjects interacting with a cocealed box with 5 different weights at neutral environment.
 In total 25 video sequences recorded with Iphone.
 
 ## Download
