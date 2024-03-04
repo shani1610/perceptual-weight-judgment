@@ -4,7 +4,7 @@ Collaborators: [Georgopoulou, Artemis](https://github.com/artemisge) | [Israelov
 
 [[Project Report]](https://docs.google.com/document/d/e/2PACX-1vSASPeU8cQC7EI6yIh76JWRZKQWgrYbdHmD1CYblf8ZGva5pHf9cNvCmzJoQ0WjJg73TBcDSSHU6jVA/pub)
 <p align="center">
-<img src="images/snippet1_gif.gif" alt="teaser" width="1920"/>
+<img src="images/snippet1_gif.gif" alt="teaser" width="500"/>
 </p>
 This is a dataset for human perceptual weight judgment. 
 
@@ -12,8 +12,10 @@ This is a dataset for human perceptual weight judgment.
 1. [Description](#description)
 2. [Download](#download)
 3. [Dataset Structure](#dataset-structure)
-4. [License](#license)
-5. [Citation](#citation)
+4. [Example usage](#example-usage)
+5. [Future work - Virtual Reality Integration](#future-work---virtual-reality-integration)
+7. [License](#license)
+8. [Citation](#citation)
 
 ## Description
 The Perceptual Weight Judgment dataset is a dataset of humans lift box with changing weights.
@@ -36,7 +38,6 @@ After unzip the dataset, you can find folder `data` containing file with the nam
 Here we describe example usage of our dataset: 
 
 ### Crop 30% of the frame from the bottom 
-
 We provide sample code in `crop_bottom.py` to crop 30% of the frame from the bottom. Run with:
 ```
 python crop_bottom.py -s DATA_PATH
@@ -44,8 +45,25 @@ python crop_bottom.py -s DATA_PATH
 example:
 
 <p align="center">
-<img src="images/snippet1.png" alt="teaser" width="1920"/>
+<img src="images/snippet1.png" alt="teaser" width="800"/>
 </p>
+
+## Future work - Virtual Reality Integration
+clone [Video Inference for Body Pose and Shape Estimation (VIBE)](https://github.com/mkocabas/VIBE) and follow the installation requirements (it includes the environment creation and activation)
+
+uninstall pyglet and reinstall using ```pip install pyglet==1.5.27```
+
+install in linux using ```sudo apt install ffmpeg```
+
+run the demo script on our dataset
+
+you might want to decrease the batch size to avoid CUDA out of memory issues
+
+the result would be a pkl file that includes the SMPL 3D joints and mesh vertices as decribed in [VIBE's Output Format](https://github.com/mkocabas/VIBE/blob/master/doc/demo.md) and video with the human mesh, for example:
+
+https://github.com/shani1610/perceptual-weight-judgment/assets/56839113/bd52aafc-b0d1-4a26-8a1d-cdae3acfd27b
+
+The output can be converted to FBX/glTF files to be used in 3D graphics tools like Blender, Unity etc. 
 
 ## License
 Copyright (c) 2024, Toyohashi-University-Of-Technology
